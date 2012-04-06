@@ -1,0 +1,59 @@
+2010-03-29 09:12:24
+-------------------
+(live transaction) --> https://api-3t.paypal.com/nvp
+Request Headers: 
+Array
+(
+    [0] => Content-Type: text/namevalue
+    [1] => X-VPS-Timeout: 45
+    [2] => X-VPS-VIT-Client-Type: PHP/cURL
+    [3] => X-VPS-VIT-Integration-Product: PHP::Zen Cart - WPP-NVP
+    [4] => X-VPS-VIT-Integration-Version: 1.3.8a
+)
+
+
+Request Parameters: {SetExpressCheckout} 
+Array
+(
+    [LOCALECODE] => US
+    [PAYMENTACTION] => Sale
+    [ADDROVERRIDE] => 1
+    [SHIPTONAME] => fgfdg dfas
+    [SHIPTOSTREET] => dagadgag
+    [SHIPTOSTREET2] => asgag
+    [SHIPTOCITY] => daggdsag
+    [SHIPTOZIP] => agadg
+    [SHIPTOSTATE] => 上海
+    [SHIPTOCOUNTRYCODE] => CN
+    [EMAIL] => 111@111.111
+    [PHONENUM] => 11111111
+    [AMT] => 200.00
+    [RETURNURL] => http://192.168.0.191/ugg/ipn_main_handler.php?type=ec
+    [CANCELURL] => http://192.168.0.191/ugg/index.php?main_page=checkout_shipping&amp;ec_cancel=1
+    [PAGESTYLE] => Primary
+    [METHOD] => SetExpressCheckout
+    [CURRENCYCODE] => GBP
+    [VERSION] => 3.2
+)
+
+
+Response: 
+Array
+(
+    [TIMESTAMP] => 2010-03-29T09:13:09Z
+    [CORRELATIONID] => 6b6d4f175d1db
+    [ACK] => Failure
+    [VERSION] => 3.2
+    [BUILD] => 1244696
+    [L_ERRORCODE0] => 10002
+    [L_SHORTMESSAGE0] => Authentication/Authorization Failed
+    [L_LONGMESSAGE0] => You do not have permissions to make this API call
+    [L_SEVERITYCODE0] => Error
+    [CURL_ERRORS] => 
+)
+
+
+SetExpressCheckout, Elapsed: 5557ms -- Failure
+
+TIMESTAMP=2010%2d03%2d29T09%3a13%3a09Z&CORRELATIONID=6b6d4f175d1db&ACK=Failure&VERSION=3%2e2&BUILD=1244696&L_ERRORCODE0=10002&L_SHORTMESSAGE0=Authentication%2fAuthorization%20Failed&L_LONGMESSAGE0=You%20do%20not%20have%20permissions%20to%20make%20this%20API%20call&L_SEVERITYCODE0=Error&CURL_ERRORS=
+

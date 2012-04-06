@@ -1,0 +1,56 @@
+<div id='topdiv' style='width:100%;height:100%;position:absolute;top:0px;left:0px;overflow-y:scroll;overflow-x:hidden;padding:0px;margin:0px;border-width:0px;'>
+
+
+<center><div id='newsdiv' style='display:none;width:{sitewidth}px;text-align:left;'></div></center>
+
+<table border=0 cellspacing=0 cellpadding=0 width={sitewidth}px align=center><!--sitewidth为总宽度-->
+ <tr>
+  <td height=28 width=7 background='temp/longbill_1/images/border_01.gif'></td><!--图片路径应该是对index.php来说的相对路径 格式为 temp/风格名/图片具体地址 -->
+  <td height=28 background='temp/longbill_1/images/border_02.gif'>
+   <table width=100% cellpacing=0 cellspacing=0 border=0>
+    <tr>
+     <td align=left>
+      <font class=title>{title}&nbsp;&nbsp;{currentpath}</font><!--title为标题,currentpath 为当前路径-->
+     </td>
+     <td align=right>
+      {logout} <!--logout为退出按钮的连接-->
+     </td>
+    </tr>
+   </table>
+  </td>
+  <td height=28 width=7 background='temp/longbill_1/images/border_03.gif'></td>
+ </tr>
+ <tr>
+  <td width=7 background='temp/longbill_1/images/border_04.gif'></td>
+  <td>
+   {main}
+  </td>
+  <td width=7 background='temp/longbill_1/images/border_06.gif'></td>
+ </tr>
+ <tr>
+  <td height=7 width=7 background='temp/longbill_1/images/border_07.gif'></td>
+  <td height=7 background='temp/longbill_1/images/border_08.gif'></td>
+  <td height=7 width=7 background='temp/longbill_1/images/border_09.gif'></td>
+ </tr>
+</table>
+{footer}
+</div>
+
+
+<!---Loading...--->
+<div id='loading' style='position:absolute;overflow:hidden;top:0px;right:18px;width:70px;height:18px;color:#ffffff;z-index:9;background-color:#e45b50;font-family:宋体;font-size:12px;vertical-align:middle;padding:2px;'>正在加载...</div>
+
+
+<!---Blueshow--->
+<div id='bs_main' style="display:none;z-index:1001;position:absolute;top:0;left:0;border:0px;text-align:center;overflow:hidden;">
+<table style='border-collapse: separate; layout:fixed;border-spacing: 4px;caption-side: middle;text-align:center;overflow:hidden;' id='bs_table'><tr><td colspan=3 id='bs_title'></td></tr>
+<tr><td style='width:100px' id='bs_img_left' align=center></td><td id='bs_img' align=center>&nbsp;</td><td style='width:100px' id='bs_img_right' align=center>&nbsp;</td></tr>
+<tr><td align=center style='font-size:12px;color:#333333;'>Powered By <a href='http://www.longbill.cn' target=_blank style='color:#8ec2f5;text-decoration:none;'>Longbill</a></td>
+<td align=center><a href='javascript:bs_show(1)' style='text-decoration:none;color:#333333' title='Go to the first one'><<</a>&nbsp;&nbsp;<a href='javascript:bs_pre()' style='text-decoration:none;color:#333333' title='Previous'><-</a>&nbsp;&nbsp;
+<span style='width:20px;font-size:16px;' id='bs_num'></span>&nbsp;&nbsp;<a href='javascript:bs_next()' style='text-decoration:none;color:#333333' title='Next'>-></a>&nbsp;&nbsp;
+<a href='javascript:bs_show(bs_total)' style='text-decoration:none;color:#333333' title='Go to the last one'>>></a></td><td align=center>
+<a href='javascript:bs_close()' style='text-decoration:none;color:#333333;font-size:16px;font-weight:bold;font-family:Arial;background-color:auto;' title='Close Blue Show'>CLOSE</a></td></td>
+</tr></table>
+</div>
+<div id='bs_move_div' style='position:absolute;padding:3;z-index:1002;width:auto;height:auto;display:none;word-wrap:break-word;word-break:break-all;font-size:12px;'>&nbsp;</div>
+<div id="bs_bg" style="left:0px;top:0;position:absolute;margin:0;z-index:1000;display:none;border:0px;">&nbsp;</div>

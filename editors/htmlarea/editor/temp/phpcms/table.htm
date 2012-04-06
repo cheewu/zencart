@@ -1,0 +1,196 @@
+<!---右键菜单模块--->
+<div id="mlay" style="position:absolute;display:none;cursor:default;font-family:宋体;font-size:9pt;" onClick="return false;"></div>
+
+<!---隐藏框架--->
+<iframe name='inwin' id='inwin' src='' width=0px height=0px border=0 style="display:none" visibility=hidden></iframe>
+
+<table width=100% cellspacing=0 cellpadding=0 border=0 class=items>
+<tr>
+<td width=16% valign=top>
+
+<table width="90%"  border="0" cellpadding="4" cellspacing="1" bgcolor="#183789" class=tooltable>
+<tr style="cursor:hand;" >
+ <th style="background-image:url(temp/phpcms/images/admin_bg_1.gif);" >
+版本号:{version}
+</td>
+</tr>
+<TBODY style="display:" id="admin">
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<img src='images/refresh.gif' /><a href='javascript:reloaddata();' title=刷新当前目录中的内容>刷新</a>
+</td>
+</tr>
+
+<tr>
+<td style="display:{downfile}" height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<img src='images/downfile.gif' /><a href='javascript:downfile();' title='下载选中的文件和文件夹
+如果是单个文件将下载其源文件
+如果是多个文件或文件夹则将他们打包下载'>下载文件</a>
+</td>
+</tr>
+
+<tr>
+<td style="display:{property}" height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<img src='images/property.gif' /><a href='javascript:property();' title=取得当前目录的详细信息>属性</a>
+</td>
+</tr>
+
+<tr>
+<td style="display:{search}" height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<img src='images/search.gif' /><a href='javascript:search();' title=搜索文件>搜索</a>
+</td>
+</tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<input type=checkbox id='icon_mode' onclick='$("visit_mode").checked=this.checked;display()'>缩略图 <input type=checkbox id='visit_mode' onclick='display()'>浏览
+   <span class=toolbutton1 style="display:none"><input type=checkbox id='viewhidefiles' onclick='reloaddata()'>查看所有文件</span>
+</td>
+</tr>
+
+<tr>
+<td style="display:{select}" height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'">
+<a href='javascript:allcheck();' title=全部选中>全选</a> <a href='javascript:anticheck();' style="display:{select}" title=反向选择>反选</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<br/>
+<table width="90%"  border="0" cellpadding="4" cellspacing="1" bgcolor="#183789" class=tooltable>
+<tr style="cursor:hand;" onclick="display_tools()">
+ <th style="background-image:url(temp/phpcms/images/admin_bg_1.gif);" ><img src="temp/phpcms/images/jia.gif" id="toolsmore_img"/>更多功能
+</td>
+</tr>
+<TBODY style="display:none" id="toolsmore" >
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{newdir}">
+<img src='images/newfolder.gif' /><a href='javascript:newfile(1);' title=新建目录>新建目录</a>
+</td>
+</tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{newfile}">
+<img src='images/icon_txt.gif' /><a href='javascript:newfile();' title=新建一个文本类型的文件>新建文件</a>
+</td></tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{zippack}">
+<img src='images/icon_zip.gif' /><a href='javascript:zippack();' title=将选中的文件及文件夹打包压缩>添加到压缩文件</a>
+</td></tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{upfile}">
+<img src='images/upfile.gif' /><a href='javascript:fileup(0);' title='打开上传文件模块'>上传文件</a>
+</td></tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{move}">
+<img src='images/cut.gif' /><a href='javascript:filecopy("cut");'  title=剪切选中的文件或文件夹>剪切</a>
+</td></tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{copy}">
+<img src='images/copy.gif' /><a href='javascript:filecopy("copy");'  title=复制选中的文件或文件夹>复制</a>
+</td>
+</tr>
+
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{paste}">
+<img src='images/paste.gif' /><a href='javascript:filepaste();'  title=将剪贴板中的文件和文件夹粘贴到此目录下>粘贴</a>
+</td></tr>
+
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{delete}">
+<img src='images/delete.gif' /><a href='javascript:filedel();' title=删除选中的文件或文件夹>删除</a>
+</td>
+</tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{savefromurl}">
+<a href='javascript:fileup(1);' title='下载一个远程文件到服务器'>远程下载</a>
+</td>
+</tr>
+
+<tr>
+<td height="22" bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F8F8'" onMouseOut="this.style.backgroundColor='#FFFFFF'" style="display:{admin}">
+<a href='javascript:open_ctrl();' >控制面板</a>
+</td></tr>
+
+</tbody>
+</table>
+
+
+</td><td width=84% valign=top>
+
+
+<TABLE class=tableborder style="border-bottom:0px;margin-bottom:0px;" cellSpacing=1 cellPadding=2>
+  <TBODY>
+  <TR>
+    <TH align=left colSpan=8 style="background-image:url(temp/phpcms/images/admin_bg_1.gif);" >当前路径:<span id='currentpath' class=path></span></TH></TR>
+    <TD class=tablerow colSpan=8>&nbsp;&nbsp;<A href="javascript:upindex();"><IMG src="temp/phpcms/images/parent.gif">返回上级目录</A> 
+  </TD></TR>
+</tbody>
+</table>
+
+<TABLE class=innertable cellSpacing=0 cellPadding=0>
+<tbody>
+<tr><td>
+
+<!---远程下载--->
+<div id='updiv1' class='functiondiv' style="display:none;">
+ <form name='upform2'>
+文件地址:<INPUT name="url" TYPE="text"  size="30">&nbsp;保存为[可不填]<input type=text name=filename size=10>
+ <input type=button value="下载" onclick="savefromurl()">&nbsp;<input type=button value=关闭 onclick=" document.getElementById('updiv1').style.display='none';">
+ <input type=hidden name=path id='upsavefromurlpath' value=''></form>
+</div>
+
+<!---本地上传-->
+<div id='updiv0' class='functiondiv' style="display:none;">
+ <form name='upform' ENCTYPE='multipart/form-data' action='up.php?action=upsave' method="post" target='inwin' onsubmit='waitme()'>
+ <div id='updivdata'>
+	<div id='upfileinput0'>
+		本地文件:<INPUT name="myfile0" TYPE="File"  size="50"> 
+		<input type=button onclick="delupfile(0)" value=删除>
+	</div>
+ </div>
+<br/>
+ <input class='button' type=button value=增加 onclick="addupfile()">&nbsp;<input class='button' type="Submit" value="上传">&nbsp;
+<input class='button' type="button" value="清空" onclick="updivdata.innerHTML='';">&nbsp;
+<input class='button' type=button value=关闭 onclick=" document.getElementById('updiv0').style.display='none';">
+<input type=hidden name=path id='upsavepath' value=''>
+ </form>
+</div>
+<script>
+var allow_admin = "{admin}";
+</script>
+
+</td></tr>
+</tbody>
+<tbody id="smalltable">
+<tr>
+<td id='dirtable'></td>
+</tr>
+<tr>
+<td id='filetable'>
+
+</td>
+</tr>
+</tbody>
+<tbody id="bigtable_top">
+<tr><td><div id="bigtable"></div></td></tr>
+</tbody>
+</table>
+
+<TABLE class=tableborder cellSpacing=1 cellPadding=2 style="border-top:0px;" >
+<tbody>
+  <TR>
+    <TD class=tablerow colSpan=8>&nbsp;共<span id='total_folder'>0</span>个目录，<span id='total_file'>0</span>个文件</TD></TR></TBODY></TABLE>
+
+</td></tr>
+</table>

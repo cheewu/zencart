@@ -1,0 +1,6 @@
+
+TUTTE le cartelle predisposte all'override si chiamano [classic]
+Devono essere rinominate con il nome del template in uso che NON deve essere quello di default.
+
+Questo per evitare che durante l'aggiornamento si perdano i dati o i file o quant'altro sia stato posto in [classic]
+

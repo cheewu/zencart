@@ -1,0 +1,2 @@
+<p><strong>Per una migliore navigazione del Sito, abbiamo predisposto una mappa.</strong></p>
+<p>In difficolt&agrave; nel trovare qualcosa nel nostro Sito?<br />Non esitare, visita la pagina <a href="<?php echo zen_href_link(FILENAME_CONTACT_US); ?>">per contattarci </a> ed invia la tua richiesta, grazie.</p>

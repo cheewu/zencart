@@ -1,0 +1,16 @@
+<table cellSpacing=1 cellPadding=2 class='list file' ondblclick="window.open('{url}','_blank','')">
+<tr onmouseover="setHover(this,'#e4edf9');" onmouseout="reHover(this);" >
+	<td class='td1'><input style='display:{display};' type='checkbox' id='checkbox_f{id}'></td>
+	<td class='td2'><a href='?path={path}&action=editfile' target=_blank><img border=0 src='images/icon_{type}.gif' /></a></td>
+	<td class='td3' id='filename_{id}'><a href="{url}" title='{fullname}' id='{hrefid}' target=_blank><nobr>{name}</nobr></a>{zip}</td>
+	<td class='td4'>
+		<span class='size'>{size}</span>
+	</td>
+	<td class='td5' >
+		<span class='down'><a href="javascript:downfile1({id});" title="下载文件">下载</a>&nbsp;&nbsp;</span>
+		<a href="javascript:filerename({id});"><span style='display:{display}'>改名</span></a>&nbsp;&nbsp;
+		<span style='display:{display}'><a href="?path={path}&action=editfile" target=_blank>编辑</a>&nbsp;&nbsp;</span>
+		<span style='display:{display}'><a href="javascript:makesure('f',{id});">删除</a></span>
+	</td>
+</tr>
+</table>

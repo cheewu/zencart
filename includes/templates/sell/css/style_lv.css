@@ -1,0 +1,268 @@
+/**
+ * Main CSS Stylesheet
+ *
+ * @package templateSystem
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: stylesheet.css 5349 2006-12-22 20:34:40Z birdbrain $
+ */
+
+/*lv style*/
+
+body{
+	margin: 0 auto;
+	font:12px Arial, Helvetica, sans-serif,"";
+	color:#666;
+	line-height:150%;
+	background:#ffffff;
+	background:url(../images/bg_main.gif);
+	padding:10px 0 0 0;
+}
+a{color: #666; text-decoration: none;}
+a:hover { color: #204f48; text-decoration:underline;}
+a img{ border:0;}
+
+
+#menu{ clear:left; margin:1px auto; border:1px solid #204f48; padding:0; background: #204f48;/* background:url(../images/menubg.gif) repeat-x left center;*/ height:30px; color:#fff;}
+#menu .banner { background: red}
+#menu ul{ list-style:none; margin:0; padding:0;}
+#menu li{ line-height:30px; padding-left:6px; float:left; margin:1px;}
+#menu li a{cursor:pointer;
+	float:left;
+	padding-left:30px;
+	padding-right:30px;
+	color:#fff;
+	font-size:14px;
+	font-weight: normal;
+	background:url(../images/menuline.gif) no-repeat right center; }
+#menu li a:hover{ text-decoration: underline; color:#fff}
+
+.leftBoxHeading,.rightBoxHeading {/*left BOX tittle*/
+	background-color:#205049;
+	height:26px;
+	color:#fff;
+	font-size:12px;
+	line-height:26px;
+	padding-left:10px;
+	padding-top:0px;
+	font-weight: normal;
+}
+.leftBoxHeading a,.rightBoxHeading a { color:#fff; }
+.leftBoxHeading a:hover,.rightBoxHeading  a:hover { color:#fff;text-decoration:none;}
+.sideBoxContent {padding:0 10px 10px  10px; overflow:hidden;}
+
+.wrapper img{margin-bottom:3px;}
+.wrapper ul { list-style:none;}
+.wrapper ol{ width:200px; float:left; color:#2d1515}
+.wrapper ol li a { color:#000;}
+.wrapper ol li a:hover{color:#204f48 }
+
+#categories{/* categories box*/
+	background:url(../images/leftbg.jpg) repeat-y center; margin-bottom:6px;
+}
+#categoriesHeading {/*categoriesheading BOX tittle*/}
+
+
+
+
+#categoriesContent ul { margin:0; padding:0; list-style-type:none; }
+
+#categoriesContent ul  a.category-top{ color:#666; }
+#categoriesContent ul  a.category-top:hover{ color: #666; text-decoration:underline;}
+
+#categoriesContent ul li {line-height:20px;padding-left:10px;}
+#categoriesContent ul li a.category-top{padding-left:10px; color:#204f48;}
+#categoriesContent ul li a.category-top:hover{ color: #204f48; text-decoration:underline;}
+#categoriesContent ul li a.category-products{ color:#204f48; padding-left:25px;}
+#categoriesContent ul li a.category-products:hover{ color: #204f48; text-decoration:underline }
+
+#checkoutShippingHeading,#checkoutShipAddressDefaultHeading,#checkoutPayAddressDefaultHeading,#ezPagesHeading,#cartDefaultHeading,#createAcctDefaultHeading,#loginDefaultHeading,#accountDefaultHeading,#orderHistoryDetailedOrder,#orderHistoryStatus,#accountHistoryDefaultHeading,#createAcctSuccessHeading,#logoffDefaultHeading{
+	color:#666;
+	margin-bottom:20px;
+	/*font-weight:bold;*/
+	border-bottom:2px solid #25c1b3;
+	text-align:left;
+}
+#myAccountShipInfo h3,#myAccountPaymentInfo h3{
+	color:#666;
+	margin-bottom:20px;
+	border-bottom:2px solid #25c1b3;
+}
+
+#bannerThree{
+	background:url(../images/flash.gif) no-repeat right;
+	}
+
+/*wrappers - page or section containers*/
+#mainWrapper {
+background-color:#ffffff;
+margin:0px auto;
+text-align: left;
+width:990px !important; width: 994px; 
+vertical-align: top;
+clear:both;
+padding: 5px !important; padding: 3px;
+}
+
+/*----------------------------header css-----------------------------*/
+#headerWrapper {
+	margin: auto;
+	clear: both;
+	width: 1000px;
+	background-color: #fff;
+}
+#logoWrapper{height:110px; width:420px; float:left; text-align:left}
+#logo { width:300px; float:left; padding:10px; padding-top:20px; }
+#logotext {float:left; padding:0; padding-top:10px;color:#888; /*font-weight:bold;*/ clear:right; text-align:left}
+#logotext a {margin:0 10px;color:#555;font-weight:bold}
+#logotext .rss {float:right; background:#eee; width:220px; background:url(../images/paypallogo.jpg) right top no-repeat;
+padding-top:50px; text-align:right}
+#list { float:right; width:500px; margin:3px;  text-align:right; color:#3c1d0b; /*border:1px dashed #993300*/}
+#list ul { text-align:right; margin:0; padding:0}
+#list ul li { float:right; margin:2px 0;}
+
+#list a {margin:0 8px;color:#555;}
+#list a:hover {color:#204f48}
+#topad { background:url(../images/topad.gif) no-repeat left center; width:520px; height:50px  }
+
+
+
+#navCatTabsWrapper {
+	background:url(../images/menubg2.gif) repeat-x left top;
+	color: #9a9a9a;
+	margin-bottom:1px;
+}
+#navCatTabsWrapper ul li a { color:#666}
+#navCatTabsWrapper ul li a:hover { color:#2d1515}
+
+
+#submenu { background:#ddd; padding:5px 0 3px 15px;}
+.notice { float:left; font-weight:normal;
+	width:540px;
+	background:url(../images/noticedot.gif) no-repeat 10px center; padding-left:30px}
+#topBar{ background:url(../images/noticebg.jpg) repeat-x left bottom;
+	margin:0 auto;
+	color:#2C2C2C;
+	/*font-weight:bold;*/ padding:5px; height:15px
+	}
+
+.topBox{
+	float:left; text-align:right;
+
+	}
+#nav_header{ border:none; }/*Home login*/
+#lang_header{ border:none; padding:0 10px; float:right;}
+#currency_header{ border:none; float:right}
+#cart_header{
+	background:url(../images/cart_bg.gif) 2em 0 no-repeat;
+	padding:.2em 0 0 8em;
+	}
+/*------------------------header css---------------------------------*/
+
+#navSuppWrapper{ width:1000px;text-align: center; margin:0 auto; background:#fff;
+border-top:3px solid #ccc;}/*footer*/
+#navSuppWrapper ul { background:#fff;color:#444; font-size:12px; border:0px solid #ccc }
+#navSuppWrapper ul a { color:#444;}
+#siteinfoIP { }
+#siteinfoLegal { text-align:center; font-size:11px; color:#666;margin-top:20px;}
+#siteinfoLegal a { color:#666}
+#siteinfoLegal a:hover { color: #2d1515}
+#siteinfoLegal img { margin:0 10px;}
+
+#navMain ul, #navSupp ul, #navCatTabs ul {
+	margin: 0;
+	padding: 0.5em 0em;
+	list-style-type: none;
+	text-align: center;
+	line-height: 1.5em;
+	}
+
+#navMain ul li, #navSupp ul li, #navCatTabs ul li {
+	display: inline;
+	}
+
+#navMain ul li a, #navSupp ul li a, #navSupp ul li a:visited, #navCatTabs ul li a {
+	text-decoration: none;
+	padding: 0em 0.5em;
+	margin: 0;
+	color: #444;
+	white-space: nowrap;
+	}
+#navSupp ul li a:hover {
+	text-decoration:underline;
+	}
+
+
+#bottomNav{
+	margin:auto;
+	}
+#bottomNav ul { background:#fff}
+
+#bottomNav a, #bottomNav a:visited{
+	color:#9a9a9a;
+	text-decoration:underline;
+	}
+
+#contentMainWrapper {/* content a  table */
+	margin-top:5px;
+	padding:0;
+}
+
+#featuredProducts,#whatsNew,#newProductsDefault,#featuredDefault{
+	border:1px solid #ccc;
+	padding:10px;
+	background:url(../images/bg_fieldset.jpg) repeat-x top;
+	margin-left:20px;
+}
+
+#bannerThree{
+	padding-left:20px;
+	padding-top:210px;
+	width:763px;
+	height:108px;
+	}
+
+.centerBoxHeading{/*center box tittle */
+	padding:3px 15px 0 0;
+}
+
+.bg_box_gray {background:url(../images/bg_box_gray.gif) repeat-x;}
+.allborder {border:1px solid #ddd;padding:2px;}
+
+#category_menu li a:link, #category_menu li a:visited {
+background:url(../images/list_ca_l.gif) 3px 6px no-repeat; padding:1px 10px; line-height:140%;display:block;
+}
+#category_menu li a:hover{background:#f0f0f0 url(../images/list_ca_l.gif) 3px 6px no-repeat; padding:1px 10px; line-height:140%;}
+#category_menu{
+	width:210px;
+}
+
+#productGeneral,#ezPageDefault,#contactUsDefault{
+	border:1px solid #ccc;
+	padding:10px;
+	background:url(../images/bg_fieldset.jpg) repeat-x top;
+	margin-left:20px;
+}
+.pagebar a span {border:1px solid #ddd;background-color:#fff;}
+
+#productGeneral,#newProductsDefault,#indexProductList,#featuredDefault{
+padding-left:20px;
+}
+
+.btn {
+	vertical-align: middle;
+	color: #204f48;
+	background: url(../images/search.gif) no-repeat center center;
+	height: 25px;
+	width: 52px;
+	border:0;
+	margin: 7px 3px 5px;
+	font-size:12px;
+}
+/*edit by Andy*/
+#tellAFriendAdvisory,.buttonRow{ padding:10px;}
+#create_orders{background: url(/includes/templates/template_default/images/bg_fieldset.jpg) repeat-x; }
+#cc input{border:1px solid #7F9DB9;height:20px;width:200px;}
+#cc select{border:1px solid #7F9DB9;/*height:20px;width:200px;*/}
+#cc #btn_submit{width:225px;height:32px;border:0px;}

@@ -1,0 +1,11 @@
+<div class='listfolder bg{rowodd}'onmouseover="setHover(this,'#eeeeee')" onmouseout="reHover(this)" ondblclick="opendir('{path}')">
+	<div class='checkbox'><input style='display:{display}' type='checkbox' id='checkbox_d{id}'></div>
+	<div class='icon'><img src='images/icon_folder.gif'></div>
+	<div class='dirname' >
+		<span id='dirname_{id}'><span id='dirname_{id}_name'><a href="javascript:opendir('{path}');" title='{title}'><nobr>{name}</nobr></a></span></span>
+	</div>
+	<div class='toolbutton2' style='display:{display}'>
+		<a href="javascript:filerename({id},1);">¸ÄÃû</a>&nbsp;&nbsp;
+		<a href="javascript:makesure('d',{id});">É¾³ý</a>
+	</div>
+</div>

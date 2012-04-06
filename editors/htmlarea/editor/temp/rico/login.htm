@@ -1,0 +1,108 @@
+<html>
+<head>
+ <title>{title} ---登陆</title>
+ <meta http-equiv='Pragma' content='no-cache' />
+ <meta http-equiv=Content-Type content="text/html; charset=gb2312" />
+ <meta name="keywords" contect="{keywords}" />
+ <meta name="description" content="{description}" />
+ <script src='js/hash.js'></script>
+ <script type="text/javascript">
+window.onload = function()
+{
+	document.getElementById('user_name').focus();
+}
+</script>
+<style>
+body {
+	color:#333;
+}
+#login {
+	background: #fff;
+	border: 1px solid #a2a2a2;
+	margin: 5em auto;
+	padding: 1.5em;
+	width: 25em;
+	text-align:left;
+}
+
+#login h1 {
+	margin-top: 0;
+}
+
+
+#login input {
+	padding: 3px;
+}
+
+
+#login #user_name, #user_pass {
+	font-size: 1.7em;
+	width: 90%;
+}
+
+
+#login #submit {
+	font-size: 1.5em;
+}
+
+form, label input {
+	margin: 0;
+	padding: 0;
+}
+.submit input, .submit input:focus, .button {
+	background: url( images/fade-butt.png );
+	border: 3px double #999;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	color: #333;
+	padding: 0.25em;
+}
+input:focus, textarea:focus, label:focus {
+	background: #fff;
+	border: 1px solid #686868;
+}
+textarea, input, select {
+	background: #f4f4f4;
+	border: 1px solid #b2b2b2;
+	color: #000;
+	font:  13px Verdana, Arial, Helvetica, sans-serif;
+	margin: 1px;
+	padding: 3px;
+}
+.submit input, .submit input:focus, .button {
+	background: url( images/fade-butt.png );
+	border: 3px double #999;
+	border-left-color: #ccc;
+	border-top-color: #ccc;
+	color: #333;
+	padding: 0.25em;
+	height:40px;
+}
+
+.submit input:active, .button:active {
+	background: #f4f4f4;
+	border: 3px double #ccc;
+	border-left-color: #999;
+	border-top-color: #999;
+}
+
+</style>
+</head>
+<body style='top-margin:150px;'>
+<center>
+<div id="login">
+<div style='text-align:center'><img src='images/phpcms.gif' alt="PHPCMS文件管理器" /> <span style='position:relative;top:-20;'>登陆</span></div>
+
+<form name="loginform" id="loginform" action="" method="post">
+<p><label>用户名:<br /><input type="text" name="user_name" id="user_name" value="" size="20" tabindex="1" /></label></p>
+<p><label>密&nbsp;&nbsp;码:<br /> <input type="password" name="user_pass" id="user_pass" value="" size="20" tabindex="2" /></label></p>
+
+<p class="submit" style="text-align:right">
+	<input type="submit" name="submit" id="submit" value="登陆->" tabindex="4" />
+	<input type="hidden" name="action" value="login" />
+</p>
+</form>
+</div>
+</center>
+</body>
+</html>

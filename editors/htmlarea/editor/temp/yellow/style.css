@@ -1,0 +1,39 @@
+body		{margin:0px;padding:5px;overflow:hidden;bording:0px;}
+body,div,font,p,td,tr	{font-size:13px;color:#444444;font-family:ËÎÌו}
+a		{font-size:13px;text-decoration:none;font-family:ËÎÌו}
+a:link		{color:#222222;}
+a:visited		{color:#444444;}
+a:active		{color:#43a102;}
+a:hover		{color:#43a102;left:1px;top:1px; position:relative;}
+#titlediv		{margin:2px;width:100%;background-color:#fdd283;}
+#maindiv		{margin:2px; width:100%;background-color:#fdd283;}
+#toolsdivhtml	{margin-bottom:10px;}
+.movediv		{position:absolute;width:100px;height:300px;top:500px;left:100px;z-index:99;cursor:move;background-color:lightblue;}
+.toolbutton1	{margin:10px;border:10px;}
+img		{border:0px;margin-left:3px;}
+.title		{font-size:15px;color:#ff9900;display:inline;}
+.path		{display:inline;}
+.loading		{position:absolute;top:0px;left:0px;width:100px;height:30px;color:red;z-index:9;background-color:#ddff00;}
+.listfolder 	{width:100%; height:20px;}
+.listfile 		{width:100%; height:20px;}
+.bg0 		{background-color:#fff7d2; }
+.bg1 		{background-color:#ffffff; }
+.icon		{width:25px; height:18px; float:left; overflow:hidden;}
+.functiondiv	{padding:10px;border:1px solid #333333;background-color:lightblue;margin-bottom:5px;}
+.button		{margin-left:5px;font-size:12px;}
+.checkbox		{float:left; width:20px;}
+.filename		{float:left; padding:2px; overflow:hidden;word-break:keep-all;word-wrap:normal;}
+.dirname		{float:left; padding:2px;overflow:hidden;word-break:keep-all;word-wrap:normal;}
+.toolbutton	{width:150px; float:right;}
+.toolbutton2	{width:100px; float:right;}
+.toolsmore		{border:1px solid #333333;padding:8px;background-color:transparent;}
+.size		{width:70px;display:inline;}
+.sizeanddown	{width:110px;float:right;}
+.down		{width:40px;display:inline;}
+.inputtext		{font-size: 13px; border: 1px solid #ff9900;background-color: #FFFFFF; height:20px;}
+.subbutton 	{height: 20px;width: 40px;padding:4px;margin-left:5px;border:1px solid #ff9900;background-color:transparent;font-size:13px;}
+
+.textwin		{position:absolute;border:2px solid #b4e1f5;}
+.textwintitle	{height:20px; background-color:#b4e1f5;width:100%;cursor:move;}
+.textwiniframe	{width:100%;height:100%; word-wrap:break;word-break: break-all; border:0px;}
+.textwinclose	{background-color:#eafbc8;cursor:hand; margin:2px; }

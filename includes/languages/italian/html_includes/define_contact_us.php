@@ -1,0 +1,1 @@
+Si messaggio sarà data risposta in 12-24 ore.

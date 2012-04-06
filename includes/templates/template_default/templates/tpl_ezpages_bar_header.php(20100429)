@@ -1,0 +1,32 @@
+<?php
+/**
+ * Page Template
+ *
+ * Displays EZ-Pages Header-Bar content.<br />
+ *
+ * @package templateSystem
+ * @copyright Copyright 2003-2006 Zen Cart Development Team
+ * @copyright Portions Copyright 2003 osCommerce
+ * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
+ * @version $Id: tpl_ezpages_bar_header.php 3377 2006-04-05 04:43:11Z ajeh $
+ */
+  /**
+   * require code to show EZ-Pages list
+   */
+//include(DIR_WS_MODULES . zen_get_module_directory('ezpages_bar_header.php'));
+?>
+<!--
+<li><?php //echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><?php //echo HEADER_TITLE_CATALOG; ?></a></li>
+<?php //if (sizeof($var_linksList) >= 1) { ?>
+<?php //for ($i=1, $n=sizeof($var_linksList); $i<=$n; $i++) {  ?>
+  <li><a href="<?php //echo $var_linksList[$i]['link']; ?>" <?php //if(is_array($var_linksList[$i]['name'],array('Contact Us','FAQ'))){echo 'ref="noffollow"';}?>><?php //echo $var_linksList[$i]['name']; ?></a></li>
+<?php } // end FOR loop ?>
+<?php } ?>
+-->
+<!--bof-header ezpage links-->
+<li><a href="http://192.168.0.192:8015/">Home</a></li>
+<li><a href="http://192.168.0.192:8015/products_new.html" >New Products</a></li>
+<li><a href="http://192.168.0.192:8015/featured_products.html" >Featured Products</a></li>
+<li><a href="http://192.168.0.192:8015/contact_us.html" target="_blank" ref="noffollow">Contact Us</a></li>
+<li><a href="http://192.168.0.192:8015/page.html?id=14" ref="noffollow">FAQ</a></li>
+<!--eof-header ezpage links-->

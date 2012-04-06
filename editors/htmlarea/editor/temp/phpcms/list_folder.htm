@@ -1,0 +1,13 @@
+<table cellSpacing=1 cellPadding=2 class='list folder' ondblclick="opendir('{path}')">
+<tr onmouseover="setHover(this,'#e4edf9')" onmouseout="reHover(this)" >
+	<td class='td1'><input style='display:{display}' type='checkbox' id='checkbox_d{id}'></td>
+	<td class='td2'><img src='images/icon_folder.gif'></td>
+	<td class='td3' >
+		<span id='dirname_{id}'><span id='dirname_{id}_name'><a href="javascript:opendir('{path}');" title='{title}'><nobr>{name}</nobr></a></span></span>
+	</td>
+	<td class='td4' style='display:{display}'>
+		<a href="javascript:filerename({id},1);">¸ÄÃû</a>&nbsp;&nbsp;
+		<a href="javascript:makesure('d',{id});">É¾³ý</a>
+	</td>
+</tr>
+</div>

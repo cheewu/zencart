@@ -1,0 +1,202 @@
+BODY 
+{
+	MARGIN-TOP: 0px; SCROLLBAR-FACE-COLOR: #799ae1; FONT-SIZE: 12px;  SCROLLBAR-HIGHLIGHT-COLOR: #799ae1; SCROLLBAR-SHADOW-COLOR: #799ae1; SCROLLBAR-3DLIGHT-COLOR: #799ae1; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #aabfec; SCROLLBAR-DARKSHADOW-COLOR: #799ae1;
+	overflow:hidden;
+	font-size:12px;color:#444444;font-family:ËÎÌו
+	margin:0px;padding:5px;border:0px;
+}
+td
+{
+	font-size : 12px;
+}
+TH {
+	FONT-WEIGHT: bold; 
+	height : 21px;
+	font-size:12px;
+	color : #ffffff;
+}
+FORM {
+	MARGIN: 0px
+}
+INPUT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+SELECT {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+BUTTON {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #009286; TEXT-DECORATION: underline
+}
+TD.tablerow {
+	PADDING-RIGHT: 3px; BACKGROUND: #f1f3f5; LINE-HEIGHT: 150%
+}
+TD.tablerowhighlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; BACKGROUND: #e4edf9; PADDING-BOTTOM: 3px; LINE-HEIGHT: 150%; PADDING-TOP: 3px
+}
+.title {
+	BACKGROUND: url(images/topbar_bg.gif)
+}
+.inputtitle {
+	BACKGROUND: url(images/ruler.gif) repeat-x
+}
+.border {
+	BORDER-RIGHT: #009286 1px solid; BORDER-TOP: #009286 1px solid; BORDER-LEFT: #009286 1px solid; BORDER-BOTTOM: #009286 1px solid
+}
+.tableborder {
+	BORDER-RIGHT: #183789 1px solid; BORDER-TOP: #183789 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #183789 1px solid; WIDTH: 100%; BORDER-BOTTOM: #183789 1px solid
+}
+.submenu {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #4466cc; COLOR: white; LINE-HEIGHT: 150%
+}
+.pagemenu {
+	BACKGROUND: #4466ee; COLOR: white; LINE-HEIGHT: 150%
+}
+A.pagelink:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.pagelink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.pagelink:hover {
+	COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.tdbg {
+	BACKGROUND: #e1f4ee; LINE-HEIGHT: 120%
+}
+.tdbg2 {
+	BACKGROUND: #e0eef5; LINE-HEIGHT: 120%
+}
+.topbg {
+	BACKGROUND: #009286; COLOR: #ffffff
+}
+.bgcolor {
+	BACKGROUND-COLOR: #e1f4ee
+}
+.title1 {
+	BACKGROUND: url(images/titlebg2.gif) no-repeat; WIDTH: 80px; CURSOR: pointer; LINE-HEIGHT: 120%; PADDING-TOP: 2px
+}
+.title2 {
+	BACKGROUND: url(images/titlebg1.gif) no-repeat; WIDTH: 80px; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 2px
+}
+.tab1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: url(images/titlebg2.gif) no-repeat; WIDTH: 78px; LINE-HEIGHT: 120%; PADDING-TOP: 2px; LETTER-SPACING: 1px
+}
+.tab1 A {
+	COLOR: #676767; TEXT-DECORATION: none
+}
+.tab1 A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+.tab2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: url(images/titlebg1.gif) no-repeat; WIDTH: 78px; COLOR: #ffffff; PADDING-TOP: 2px; LETTER-SPACING: 1px
+}
+.tab2 A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.tab2 A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.white {
+	CURSOR: pointer; COLOR: #ffffff
+}
+.white A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.white A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.mover {
+	BACKGROUND: #bfdfff
+}
+.mout {
+	BACKGROUND: #f1f3f5
+}
+.comment_content {
+	WIDTH: 750px; WORD-BREAK: break-all; WORD-WRAP: break-word
+}
+.comment_quote {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 10px; BACKGROUND: #ffffee; PADDING-BOTTOM: 10px; BORDER-LEFT: #999999 1px solid; WIDTH: 100%; WORD-BREAK: break-all; PADDING-TOP: 10px; BORDER-BOTTOM: #999999 1px solid; WORD-WRAP: break-word
+}
+
+.list
+{
+	width : 100%;
+	BORDER:1px solid #ffffff; 
+	border-top : 0px;
+	height : 20px;
+}
+.list TR
+{
+	BACKGROUND: #f1f3f5
+}
+.folder .td1 { width : 3%; }
+.folder .td2 { width : 3%; }
+.folder .td3 { width : 65%; }
+.folder .td4 { width : 29%; }
+
+.file .td1 { width : 3%; }
+.file .td2 { width : 3%; }
+.file .td3 { width : 50%; }
+.file .td4 { width : 15%; }
+.file .td5 { width : 29%; }
+
+.list tr
+{
+	border-top : 2px solid red;
+}
+
+.innertable
+{
+	border-bottom:-1px;border-top:0px;padding:0px;
+	BORDER-RIGHT: #183789 1px solid; BORDER-LEFT: #183789 1px solid;
+	WIDTH: 100%;
+	background-color:#ffffff;
+	position:relative;
+}
+
+#maindiv		{margin:2px; width:100%;background-color:#c3d9ff;}
+
+.path a
+{
+	color : #ffffff;
+}
+.path a:hover
+{
+	color : #FF9900;
+}
+
+.movediv		{position:absolute;width:100px;height:300px;top:500px;left:100px;z-index:99;cursor:move;background-color:lightblue;}
+.toolbutton1	{ height:10px; background-color:#e494f2;border:1px solid #333333;margin:4px;cursor:hand; padding:2px;}
+img		{border:0px;margin:0px;margin-right:5px;}
+.title		{font-size:26px;color:#ffffff;display:inline;font-family:ËÎÌו;}
+.path		{display:inline;}
+.loading		{position:absolute;top:0px;left:0px;width:100px;height:30px;color:red;z-index:9;background-color:#ddff00;}
+.icon		{width:25px; height:18px; float:left; overflow:hidden;}
+.functiondiv	{padding:10px;border:1px solid #333333;background-color:lightblue;margin-bottom:5px;}
+.button		{margin-left:5px;font-size:12px;}
+.checkbox		{float:left; width:20px;}
+.filename		{float:left; padding:2px; overflow:hidden;word-break:keep-all;word-wrap:normal;}
+.dirname		{float:left; padding:2px;overflow:hidden;word-break:keep-all;word-wrap:normal;}
+.toolbutton	{width:150px; float:right;}
+.toolbutton2	{width:100px; float:right;}
+.toolsmore		{border:1px solid #333333;padding:8px;background-color:transparent;}
+.size		{width:70px;display:inline;}
+.sizeanddown	{width:110px;float:right;}
+.down		{width:40px;display:inline;}
+.inputtext		{font-size: 13px; border: 1px solid #ff9900;background-color: #FFFFFF; height:20px;}
+.subbutton 	{height: 20px;width: 40px;padding:4px;margin-left:5px;border:1px solid #ff9900;background-color:transparent;font-size:13px;}
+
+.textwin		{position:absolute;border:2px solid #b4e1f5;}
+.textwintitle	{height:20px; background-color:#b4e1f5;width:100%;cursor:move;}
+.textwiniframe	{width:100%;height:100%; word-wrap:break;word-break: break-all; border:0px;}
+.textwinclose	{background-color:#eafbc8;cursor:hand; margin:2px; }

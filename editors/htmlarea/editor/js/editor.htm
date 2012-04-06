@@ -1,0 +1,56 @@
+<iframe name=inwin id=inwin src='' width=0px height=0px style="display:none"></iframe>
+
+<form action='do.php?action=savefile&path={path}' method=post name=editform>
+<table border=0 cellspacing=0 cellpadding=0 width=100% style="layout:fixed;">
+ <tr>
+  <td width=100% colspan=9 height=23 background=images/titleback.gif>
+   <a href='javascript:window.close()'>关闭</a>
+   <a href='javascript:repon();'>字符替换</a>   
+   <font style='font-size:10pt;'>查找请按Ctrl+F</font> 
+   <a href="jump.php?url={path}" target=_blank>预览文件</a> 
+   <a href="javascript:runme();">本地预览</a> 
+   <input type=checkbox onclick="breakline(this.checked);" name=autobreak>自动换行&nbsp; &nbsp; &nbsp;
+ Charset <select name='fdsafdsa' onchange="window.location='index.php?path={path}&action=editfile&charset='+this.value"> 
+<option value='GB2312' {selected_gb2312}>GB2312</option>
+<option value='UTF-8' {selected_utf8}>UTF-8</option>
+</select>
+  </td>
+ </tr>
+ <tr id='replacediv' style='display:none'><td>
+<!---字符串替换--->
+<div style='background-color:lightblue;padding:10px;' >
+ <textarea name="repLeft" id="repLeft" rows=3 cols=20></textarea>(与<textarea name="repRight" id="repRight" rows=3 cols=20></textarea>间的内容)替换为:<textarea name="repMid" id="repMid" rows=3 cols=20></textarea><br>
+(<input type="checkbox" name="isRemove" id="isRemove" value="y" checked>删除定界符)<input type="button" name="Submit322" value="开始替换" onClick="str_replace();">&nbsp;<input type="button" name="Submit3222" value="撤销替换" onClick="str_undo();"> <a href="javascript:repon()">关闭</a>
+</div>
+ </td>
+ </tr>
+ <tr>
+  <td>
+   <table width=100% border=0 cellspacing=0 cellpadding=0>
+    <tr>
+     <td>
+      <textarea id='txt_ln' style='overflow:hidden;border:2px;border-right:0px;border-style:inset;padding-right:5px;text-align:right;scrolling:no;height:400px;font-family:宋体,verdana;font-size:9pt;background-color:#eeeeee;width:35px;' readonly>{lines}</textarea>
+     </td>
+     <td width=100%>
+      <textarea id='txt_main' name='content' onkeydown='editTab(event,this)' onscroll='show_ln()' style='word-wrap:normal;word-break: break-all;padding:2px;height:400px;border:2px;border-style:inset;overflow:auto;scrolling:yes;border-left:0px;font-family:宋体,verdana;font-size:9pt;width:100%;'>{content}</textarea>
+     </td>
+    </tr>
+   </table>
+
+
+<div>
+<b>保存为：</b>
+文件名:<input type=text size=20 name=filename value='{filename}'>&nbsp;编码:<select name='encodeto'>
+<option value='GB2312' {selected_gb2312} >GB2312
+<option value='UTF-8' {selected_utf8} >UTF-8
+</select>
+<input type=hidden name='encode' value='{encode}' />
+&nbsp;文件大小:{size} &nbsp;
+<input type=checkbox onclick="document.editform.target=(this.checked)?'_self':'inwin';" checked>保存后关闭此窗口&nbsp;<input type=submit value=保存>  <input type=reset value=还原 ><br>
+</div>
+
+</form>
+
+  </td>
+ </tr>
+</table>

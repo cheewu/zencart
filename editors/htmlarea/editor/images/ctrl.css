@@ -1,0 +1,45 @@
+body
+{
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	text-align: center;
+}
+.tool
+{
+	background-color:#3378ec; color:#ffffff; border:0px;
+}
+.tool a { color:#ffffff;}
+div
+{
+	padding: 8px;
+	border: 1px solid #999;
+	background-color: #EFEFEF;
+	margin-bottom: 10px;
+	width:500px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+input
+{
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	border: 1px solid #FFF;
+}
+a
+{
+	color:#000000;
+	text-decoration:none;
+}
+
+#do
+{
+	padding: 0px;
+	margin:0px;
+	border: 0px;
+	width:400px;
+}
+#n
+{
+	color:#FF2323;
+}

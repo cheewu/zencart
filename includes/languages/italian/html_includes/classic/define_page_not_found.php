@@ -1,0 +1,2 @@
+<p><strong>Pagina non trovata o non disponibile ...</strong></p>
+<p>Se non trovi subito quanto cerchi, rivolgiti con fiducia ai nostri <a href="<?php echo zen_href_link(FILENAME_CONTACT_US); ?>"><u>contatti</u></a> e inoltra la tua richiesta, entro breve tempo riceverai una risposta al tuo quesito.</p>

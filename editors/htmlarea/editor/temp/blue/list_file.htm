@@ -1,0 +1,14 @@
+<div class='listfile bg{rowodd}' onmouseover="setHover(this,'#edf7fe');" onmouseout="reHover(this);" ondblclick="window.open('{url}','_blank','')">
+	<div class='checkbox'><input style='display:{display};' type='checkbox' id='checkbox_f{id}'></div>
+	<div class='icon'><a href='?path={path}&action=editfile' target=_blank><img border=0 src='images/icon_{type}.gif' />&nbsp;&nbsp;</a></div>
+	<div class='filename' id='filename_{id}'><a href="{url}" title='{title}' id='{hrefid}' target=_blank><nobr>{name}</nobr></a>{zip}</div>
+	<div class='toolbutton' style='display:{display}'>
+		<a href="javascript:filerename({id});">改名</a>&nbsp;&nbsp;
+		<a href="?path={path}&action=editfile" target=_blank>编辑</a>&nbsp;&nbsp;
+		<a href="javascript:makesure('f',{id});">删除</a>
+	</div>
+	<div class='sizeanddown'>
+		<div class='size'>{size}</div>
+		<div class='down'><a href="javascript:downfile1({id});" title="下载文件">下载</a>&nbsp;&nbsp;</div>
+	</div>
+</div>
