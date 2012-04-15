@@ -1,1 +1,0 @@
-a:1:{i:0;a:2:{s:21:"project_version_major";s:1:"1";s:21:"project_version_minor";s:3:"3.8";}}

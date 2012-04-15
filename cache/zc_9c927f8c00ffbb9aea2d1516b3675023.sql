@@ -1,1 +1,0 @@
-a:2:{i:0;a:2:{s:17:"configuration_key";s:35:"SHOW_PRODUCT_INFO_MAIN_NEW_PRODUCTS";s:19:"configuration_value";s:1:"1";}i:1;a:2:{s:17:"configuration_key";s:40:"SHOW_PRODUCT_INFO_MAIN_FEATURED_PRODUCTS";s:19:"configuration_value";s:1:"1";}}

@@ -1,1 +1,0 @@
-a:2:{i:0;a:4:{s:10:"banners_id";s:1:"6";s:12:"expires_date";N;s:19:"expires_impressions";s:1:"0";s:13:"banners_shown";s:7:"5018989";}i:1;a:4:{s:10:"banners_id";s:1:"7";s:12:"expires_date";N;s:19:"expires_impressions";s:1:"0";s:13:"banners_shown";s:3:"841";}}

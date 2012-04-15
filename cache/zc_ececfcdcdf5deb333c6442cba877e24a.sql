@@ -1,1 +1,0 @@
-a:1:{i:0;a:1:{s:15:"layout_box_name";s:17:"search_header.php";}}
